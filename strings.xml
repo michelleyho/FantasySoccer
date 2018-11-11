@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Fantasy Soccer</string>
+    <string name="ScoreA">Score: %1$d</string>
+    <string name="ScoreB">Score: %1$d</string>
+    <string name="RedA">Red Card: %1$d</string>
+    <string name="RedB">Red Card: %1$d</string>
+    <string name="YellowA">Yellow Card: %1$d</string>
+    <string name="YellowB">Yellow Card: %1$d</string>
+    <string name="FoulA">Foul: %1$d</string>
+    <string name="FoulB">Foul: %1$d</string>
+</resources>

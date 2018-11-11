@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/soccerBackground"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-medium"
+                android:text="Team A"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/score_A"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="@string/ScoreA"
+                android:textColor="@color/fontColor"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/red_A"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="@string/RedA"
+                android:textColor="@color/fontColor"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/yellow_A"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="@string/YellowA"
+                android:textColor="@color/fontColor"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/foul_A"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="@string/FoulA"
+                android:textColor="@color/fontColor"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/add_goal_A"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="updateScoreA"
+                android:text="+10 : Goal" />
+
+            <Button
+                android:id="@+id/add_assist_A"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="updateScoreA"
+                android:text="+6: Assist" />
+
+            <Button
+                android:id="@+id/add_shot_A"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="updateScoreA"
+                android:text="+1 : Shot" />
+
+
+            <Button
+                android:id="@+id/add_cross_A"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="updateScoreA"
+                android:text="+1 : Cross" />
+
+            <Button
+                android:id="@+id/add_foul_A"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="updateScoreA"
+                android:text="+0 : Foul" />
+
+            <Button
+                android:id="@+id/add_yellow_A"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="updateScoreA"
+                android:text="-1 : Yellow Card" />
+
+            <Button
+                android:id="@+id/add_red_A"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="updateScoreA"
+                android:text="-2 : Red Card" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:background="@color/colorPrimaryDark"></View>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-medium"
+                android:text="Team B"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/score_B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="@string/ScoreB"
+                android:textColor="@color/fontColor"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/red_B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="@string/RedB"
+                android:textColor="@color/fontColor"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/yellow_B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="@string/YellowB"
+                android:textColor="@color/fontColor"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/foul_B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="@string/FoulB"
+                android:textColor="@color/fontColor"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/add_goal_B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="updateScoreB"
+                android:text="+10 : Goal" />
+
+            <Button
+                android:id="@+id/add_assist_B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="updateScoreB"
+                android:text="+6: Assist" />
+
+
+            <Button
+                android:id="@+id/add_shot_B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="updateScoreB"
+                android:text="+1 : Shot" />
+
+            <Button
+                android:id="@+id/add_cross_B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="updateScoreB"
+                android:text="+1 : Cross" />
+
+            <Button
+                android:id="@+id/add_foul_B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="updateScoreB"
+                android:text="+0 : Foul" />
+
+            <Button
+                android:id="@+id/add_yellow_B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="updateScoreB"
+                android:text="-1 : Yellow Card" />
+
+            <Button
+                android:id="@+id/add_red_B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:onClick="updateScoreB"
+                android:text="-2 : Red Card" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="resetGame"
+        android:text="RESET" />
+</RelativeLayout>
